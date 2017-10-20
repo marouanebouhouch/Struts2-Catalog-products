@@ -11,6 +11,7 @@
     <title>Index</title>
 </head>
 <body>
-    <h1>Test</h1>
+    <s:url namespace="/" action="products" var="link1" />
+    <s:a href="%{link1}">Products</s:a>
 </body>
 </html>

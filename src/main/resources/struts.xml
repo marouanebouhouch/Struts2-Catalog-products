@@ -9,5 +9,8 @@
         <action name="index">
             <result>views/index.jsp</result>
         </action>
+        <action name="products" class="com.bouhouch.catalog.web.ProductAction" method="execute">
+            <result name="success">views/products.jsp</result>
+        </action>
     </package>
 </struts>

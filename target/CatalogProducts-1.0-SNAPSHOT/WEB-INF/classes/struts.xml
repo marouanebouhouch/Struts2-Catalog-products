@@ -2,21 +2,15 @@
 <!DOCTYPE struts PUBLIC
         "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
         "http://struts.apache.org/dtds/struts-2.5.dtd">
+
 <struts>
-    <constant name="struts.enable.DynamicMethodInvocation" value="false"/>
-    <constant name="struts.devMode" value="true"/>
-
-    <include file="example.xml"/>
-
     <package name="default" namespace="/" extends="struts-default">
-
         <default-action-ref name="index"/>
-
         <action name="index">
             <result>views/index.jsp</result>
         </action>
-
+        <action name="products" class="com.bouhouch.catalog.web.ProductAction" method="execute">
+            <result name="success">views/products.jsp</result>
+        </action>
     </package>
-
-    <!-- Add addition packages and configuration here. -->
 </struts>
