@@ -42,6 +42,18 @@
                 <td><s:property value="price"/></td>
                 <td><s:property value="quantity"/></td>
                 <td><s:property value="promotion"/></td>
+                <s:url namespace="/" action="delete" var="delLink" >
+                    <s:param name="reference">
+                        <s:property value="reference"/>
+                    </s:param>
+                </s:url>
+                <td><s:a href="%{delLink}">delete</s:a></td>
+                <s:url namespace="/" action="edit" var="editLink" >
+                    <s:param name="reference">
+                        <s:property value="reference"/>
+                    </s:param>
+                </s:url>
+                <td><s:a href="%{editLink}">edit</s:a></td>
             </tr>
         </s:iterator>
         </tbody>

@@ -5,12 +5,28 @@
 
 <struts>
     <package name="default" namespace="/" extends="struts-default">
+
         <default-action-ref name="index"/>
+
         <action name="index">
             <result>views/index.jsp</result>
         </action>
+
         <action name="products" class="com.bouhouch.catalog.web.ProductAction" method="execute">
             <result name="success">views/products.jsp</result>
         </action>
+
+        <action name="save" class="com.bouhouch.catalog.web.ProductAction" method="save">
+            <result name="success">views/products.jsp</result>
+        </action>
+
+        <action name="delete" class="com.bouhouch.catalog.web.ProductAction" method="delete">
+            <result name="success">views/products.jsp</result>
+        </action>
+
+        <action name="edit" class="com.bouhouch.catalog.web.ProductAction" method="edit">
+            <result name="success">views/products.jsp</result>
+        </action>
+
     </package>
 </struts>
