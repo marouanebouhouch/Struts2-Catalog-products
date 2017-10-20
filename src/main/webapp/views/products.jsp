@@ -15,7 +15,7 @@
 <div>
     <s:form action="save" method="POST">
         <s:textfield name="product.reference" label="Reference"/>
-        <s:textfield name="product.designation" label="Designation"/>
+        <s:textfield name="product.designation" key="designation.label"/>
         <s:textfield name="product.price" label="Price"/>
         <s:textfield name="product.quantity" label="Qantity" />
         <s:checkbox name="product.promotion" label="Promotion"/>

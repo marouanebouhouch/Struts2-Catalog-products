@@ -19,7 +19,7 @@
     </field>
     <field name="product.quantity">
         <field-validator type="int">
-            <message key="quantity.int" />
+            <message>Blabla</message>
         </field-validator>
     </field>
     <field name="product.price">

@@ -1,8 +1,11 @@
 package com.bouhouch.catalog.entities;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import java.io.Serializable;
-
+@Entity
 public class Product implements Serializable {
+    @Id
     private String reference;
     private String designation;
     private double price;
