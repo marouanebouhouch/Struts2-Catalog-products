@@ -1,0 +1,30 @@
+<!DOCTYPE validators PUBLIC "-//Apache Struts//XWork Validator 1.0.3//EN"
+        "http://struts.apache.org/dtds/xwork-validator-1.0.3.dtd">
+
+<validators>
+    <field name="product.reference">
+        <field-validator type="requiredstring">
+            <message key="reference.requiredstring" />
+        </field-validator>
+        <field-validator type="stringlength">
+            <param name="minLength">3</param>
+            <param name="maxLength">10</param>
+            <message key="reference.stringLength" />
+        </field-validator>
+    </field>
+    <field name="product.designation">
+        <field-validator type="requiredstring">
+            <message key="designation.requiredstring"/>
+        </field-validator>
+    </field>
+    <field name="product.quantity">
+        <field-validator type="int">
+            <message key="quantity.int" />
+        </field-validator>
+    </field>
+    <field name="product.price">
+        <field-validator type="double">
+            <message key="price.double" />
+        </field-validator>
+    </field>
+</validators>

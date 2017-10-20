@@ -18,6 +18,7 @@
 
         <action name="save" class="com.bouhouch.catalog.web.ProductAction" method="save">
             <result name="success">views/products.jsp</result>
+            <result name="input">views/products.jsp</result>
         </action>
 
         <action name="delete" class="com.bouhouch.catalog.web.ProductAction" method="delete">
