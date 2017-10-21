@@ -1,0 +1,7 @@
+.errorMessage{
+    color: #DB2828;
+    border: dashed 1px #DB2828;
+    border-radius: 5px;
+    background-color: #FFE8E6;
+    width: 100%;
+}

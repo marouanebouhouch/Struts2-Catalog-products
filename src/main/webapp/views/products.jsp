@@ -9,23 +9,27 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
+    <link rel="stylesheet" type="text/css" href="../css/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
     <title>Products</title>
 </head>
 <body>
 <div>
-    <s:form action="save" method="POST">
-        <s:textfield name="product.reference" label="Reference"/>
+    <s:form action="save" method="POST" cssClass="ui form">
+        <s:textfield name="product.reference" label="Reference" />
         <s:textfield name="product.designation" label="Designation"/>
         <s:textfield name="product.price" label="Price"/>
         <s:textfield name="product.quantity" label="Qantity" />
-        <s:checkbox name="product.promotion" label="Promotion"/>
+        <s:checkbox name="product.promotion" label="Promotion" cssClass="ui checkbox"/>
         <s:hidden name="editMode" label="EditMode"/>
-        <s:submit value="Save"/>
+        <s:submit value="Save" cssClass="ui button"/>
     </s:form>
 </div>
 
+<hr/>
+
 <div>
-    <table border="1">
+    <table class="ui celled table">
         <thead>
         <tr>
             <th>Reference</th>
