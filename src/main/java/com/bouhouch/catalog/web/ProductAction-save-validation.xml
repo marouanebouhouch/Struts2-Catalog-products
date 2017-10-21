@@ -9,7 +9,7 @@
         <field-validator type="stringlength">
             <param name="minLength">3</param>
             <param name="maxLength">10</param>
-            <message key="reference.stringLength" />
+            <message key="referencesss.stringLength" />
         </field-validator>
     </field>
     <field name="product.designation">
@@ -19,12 +19,12 @@
     </field>
     <field name="product.quantity">
         <field-validator type="int">
-            <message>Blabla</message>
+            <message>Quantity should be a number</message>
         </field-validator>
     </field>
     <field name="product.price">
         <field-validator type="double">
-            <message key="price.double" />
+            <message >Price should be a number</message>
         </field-validator>
     </field>
 </validators>

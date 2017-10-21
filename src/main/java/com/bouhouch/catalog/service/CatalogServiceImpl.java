@@ -2,9 +2,11 @@ package com.bouhouch.catalog.service;
 
 import com.bouhouch.catalog.doa.ICatalogDao;
 import com.bouhouch.catalog.entities.Product;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
+@Transactional
 public class CatalogServiceImpl implements ICatalogService {
     private ICatalogDao dao;
 
